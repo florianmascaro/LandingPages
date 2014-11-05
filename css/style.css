@@ -1,2 +1,36 @@
 @import url('bootstrap.css');
 @import url('bootstrap-theme.css');
+
+
+
+.container {
+
+	max-width: 900px;
+}
+
+h3 {
+
+	font-family: 'open-sans';
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 44px;
+}
+
+.home .jumbotron {
+
+	background-color: #C0392B;
+	color: white;
+	min-height: 500px;
+}
+
+
+.test2 .jumbotron {
+
+	background-color: green;
+}
+
+
+img {
+
+	max-width: 100%;
+}
