@@ -2,35 +2,626 @@
 @import url('bootstrap-theme.css');
 
 
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.masthead-brand {
+	font-family: 'open sans';
+font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+.masthead-brand {
+
+	  color: rgba(255,255,255,.75);
+}
+
+.jumbotron .container {
+
+	max-width: 920px;
+}
+
+.jumbotron {
+
+	padding-top: 20px;
+}
+
+
+/* ==========================================================================
+   General
+   ========================================================================== */
+
 
 .container {
 
-	max-width: 900px;
+	max-width: 920px;
 }
-
-h3 {
-
-	font-family: 'open-sans';
-	font-weight: bold;
-	font-size: 28px;
-	line-height: 44px;
-}
-
-.home .jumbotron {
-
-	background-color: #C0392B;
-	color: white;
-	min-height: 500px;
-}
-
-
-.test2 .jumbotron {
-
-	background-color: green;
-}
-
 
 img {
 
 	max-width: 100%;
+}
+
+
+.break .jumbotron {
+
+	background-color: #555555;
+	color: white;
+	min-height: 300px;
+}
+
+.break h2 {
+
+	margin-top: -80px;
+}
+
+#say-hello {
+	color: white;
+	border: 1px solid white;
+	padding: 10px 10px 10px 10px;
+	margin-top: 50px;
+
+	max-width: 20%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a:hover #say-hello {
+	background-color: white;
+	border: 1px solid white;
+	color: black;
+	
+}
+
+.home a:hover, .break a:hover, .music a:hover, .conference a:hover, .fashion a:hover, .sport a:hover{
+	text-decoration:none;	
+}
+
+.break .jumbotron img {
+
+	margin-top: 40px;
+}
+
+
+/* ==========================================================================
+   Typo
+   ========================================================================== */
+
+h2 {
+
+	font-family: montserrat;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 44px;
+	
+}
+
+
+
+h3 {
+
+	font-family: montserrat;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 44px;
+	color: #333333;
+}
+
+
+
+
+/* ==========================================================================
+   Frame
+   ========================================================================== */
+
+.gray-frame {
+
+	border: solid 1px #EEEEEE;
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
+
+.gray-frame h3 {
+
+	padding-left: 30px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+.gray-frame p {
+
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 0px;
+	padding-bottom: 30px;
+}
+
+.gray-frame #twitter-counter {
+
+	padding-right: 30px;
+	padding-top: 20px;
+}
+
+
+
+.gray-frame p {
+
+	font-family: 'open sans';
+	font-size: 22px;
+	line-height: 38px;
+	color: #333333;
+}
+
+.gray-frame .subtitle-intro {
+
+	font-family: montserrat;
+	font-size: 18px;
+	color: #777777;
+	padding-top: 25px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+
+}
+
+#social-bar {
+	border-top: solid 1px #EEEEEE;
+
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 20px;
+
+
+}
+
+.image-profile {
+	padding-left: 30px;
+	padding-bottom: 20px;
+
+}
+
+.gray-frame .image-profile img {
+
+		max-width: 50px;
+		margin-right: 10px;
+		float: left;
+	
+}
+
+#people-connected {
+
+		padding-right: 20px;
+		margin-bottom: 40px;
+
+}
+
+
+.calendar-intro {
+
+	float: right;
+}
+
+#calendar-date {
+	border-right: solid 1px #EEEEEE;
+	padding-top: 100px;
+	padding-bottom: 60px;
+
+}
+
+#calendar-day {
+
+	font-family: montserrat;
+	font-weight: bold;
+	font-size: 84px;
+}
+
+#calendar-month {
+
+	font-family: montserrat;
+	font-weight: bold;
+	font-size: 34px;
+}
+
+#event-conference {
+
+	background-color: #2980B9;
+	color: white;
+	float: right;
+	margin-top: 30px;
+	margin-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-radius: 5px;
+	
+}
+
+#event-music {
+
+	background-color: #8E44AD;
+	color: white;
+	float: right;
+	margin-top: 30px;
+	margin-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-radius: 5px;
+	
+}
+
+#event-sport {
+
+	background-color: #D35400;
+	color: white;
+	float: right;
+	margin-top: 30px;
+	margin-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-radius: 5px;
+	
+}
+
+#event-fashion {
+
+	background-color: #BE392B;
+	color: white;
+	float: right;
+	margin-top: 30px;
+	margin-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-radius: 5px;
+	
+}
+
+#event-trend {
+
+	background-color: #23D1AF;
+	color: white;
+	float: right;
+	margin-top: 30px;
+	margin-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-radius: 5px;
+	
+}
+
+/* ==========================================================================
+   home
+   ========================================================================== */
+
+.home .jumbotron {
+
+	background-color: #23D1AF;
+	color: white;
+	min-height: 600px;
+}
+
+.home .jumbotron img {
+
+		margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.home h2 {
+
+	margin-top: -60px;
+}
+
+/* ==========================================================================
+   Conference
+   ========================================================================== */
+
+.conference .jumbotron {
+
+	background-color: #2980B9;
+	color: white;
+	min-height: 600px;
+}
+
+.conference .jumbotron img {
+
+	margin-top: 80px;
+}
+
+.conference h2 {
+
+	margin-top: -60px;
+}
+
+/* ==========================================================================
+   Sport
+   ========================================================================== */
+
+.sport .jumbotron {
+
+	background-color: #D35400;
+	color: white;
+	min-height: 600px;
+}
+
+.sport .jumbotron img {
+
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.sport h2 {
+
+	margin-top: -60px;
+}
+
+/* ==========================================================================
+   Music
+   ========================================================================== */
+
+.music .jumbotron {
+
+	background-color: #8E44AD;
+	color: white;
+	min-height: 600px;
+}
+
+.music .jumbotron img {
+
+	margin-top: 80px;
+}
+
+.music h2 {
+
+	margin-top: -60px;
+}
+
+/* ==========================================================================
+   Fashion
+   ========================================================================== */
+
+.fashion .jumbotron {
+
+	background-color: #BE392B;
+	color: white;
+	min-height: 600px;
+}
+
+.fashion .jumbotron img {
+
+	margin-top: 80px;
+/*	margin-bottom: 20px;
+*/}
+
+.fashion h2 {
+
+	margin-top: -60px;
+}
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+
+footer p {
+	font-family: montserrat;
+	color: white;
+	margin-top: 10px;
+}
+
+#copyright {
+	float: left;
+}
+
+footer a {
+
+	color: white;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: white;
+	 border-bottom: 2px solid;
+border-bottom-color: white;
+padding-bottom: 5px;
+
+}
+
+
+
+footer {
+	min-height: 50px;
+	background-color: black;
+
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+
+.home .jumbotron, .music .jumbotron, .conference .jumbotron, .fashion .jumbotron, .sport .jumbotron {
+
+
+	min-height: 300px;
+}
+
+
+h2 {
+
+	font-size: 18px;
+	line-height: 24px;
+}
+
+h3 {
+
+	font-size: 16px;
+	line-height: 28px;
+}
+
+h4 {
+
+	font-size: 12px;
+	line-height: 28px;
+}
+
+
+#twitter-counter {}
+
+
+.gray-frame {
+
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
+
+.gray-frame h3 {
+
+	padding-left: 10px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+
+}
+
+.gray-frame p {
+
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+.gray-frame #twitter-counter {
+
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.gray-frame .subtitle-intro {
+
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.gray-frame p {
+
+	font-size: 16px;
+	line-height: 24px;
+
+
+}
+
+.image-profile {
+padding-left: 10px;
+padding-bottom: 20px;
+}
+.gray-frame .image-profile img {
+
+		max-width: 30px;
+		margin-right: 10px;
+		float: left;
+	
+}
+
+
+#people-connected {
+padding-right: 5px;
+margin-bottom: 0px;
+}
+
+#say-hello {
+
+	font-size: 12px;
+	max-width: 40%;
+}
+
+
+.masthead-brand {
+
+	font-size: 16px;
+	float: left;
+	margin-right: 40px;
+	padding-top: 0px;
+}
+.masthead-nav > li > a {
+	padding-top: 5px;
+  font-size: 12px;
+
+  }
+
+  .fashion h2 {
+margin-top: -20px;
+}
+
+  .sport h2 {
+margin-top: -20px;
+}
+
+  .music h2 {
+margin-top: -20px;
+}
+
+  .conference h2 {
+margin-top: -20px;
+}
+
+  .home h2 {
+margin-top: -20px;
+}
+
+  .break h2 {
+margin-top: -20px;
+}
 }
