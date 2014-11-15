@@ -150,10 +150,10 @@ a:hover #say-hello {
 
 h2 {
 
-	font-family: montserrat;
-	font-weight: bold;
+	font-family: 'open sans';
+/*	font-weight: bold;*/
 	font-size: 28px;
-	line-height: 44px;
+	line-height: 38px;
 	
 }
 
@@ -161,10 +161,10 @@ h2 {
 
 h3 {
 
-	font-family: montserrat;
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 44px;
+	font-family: 'open sans';
+/*	font-weight: bold;
+*/	font-size: 24px;
+	line-height: 38px;
 	color: #333333;
 }
 
@@ -511,8 +511,8 @@ color: white;
 
 }
 #mc_embed_signup input {
-border: 1px solid #EEEEEE;
--webkit-appearance: none;
+/*border: 1px solid white;
+*/-webkit-appearance: none;
 float: left;
 
 }
@@ -532,7 +532,7 @@ margin-top: 30px;
 
 #mc_embed_signup input.email {
 display: block;
-background-color: transparent;
+background-color: white;
 padding:0;
 margin: 0 0 0 0;
 text-indent: 10px;
@@ -544,7 +544,7 @@ border: 1px solid white;
 border-radius: 0px;
 height: 40px;
 font-family: 'open sans';
-color: white;
+color: grey;
 }
 
 #mc_embed_signup input.email:focus {
@@ -566,8 +566,8 @@ float: left;
 
 
 #mc_embed_signup input.button {
-background-color: transparent;
-color:white;
+background-color: white;
+color:grey;
 
 border: 1px solid white;
 border-left:none;
@@ -589,8 +589,8 @@ font-family:'open sans';
 font-size: 12px;
 font-weight: 100;
 /*margin-left: -40px;*/
-padding-left: 10px;
-padding-right: 10px;
+padding-left: 25px;
+padding-right: 30px;
 
 
 }
@@ -608,25 +608,25 @@ color: grey;
 
 
 ::-webkit-input-placeholder {
- color: white;
+ color: grey;
  font-weight: 100;
  padding-left: 10px;
 }
  
 :-moz-placeholder { /* Firefox old */
- color: white;
+ color: grey;
   font-weight: 100;
  padding-left: 10px;
 }
  
 ::-moz-placeholder { /* Firefox new */
- color: white;
+ color: grey;
   font-weight: 100;
  padding-left: 10px;
 }
  
 :-ms-input-placeholder {
- color: white;
+ color: grey;
   font-weight: 100;
  padding-left: 10px;
 }
@@ -844,6 +844,14 @@ margin-top: -20px;
 
 	margin-right: 20px;
 	max-width: 30px;
+
+}
+
+#mc_embed_signup input.button {
+
+padding-left: 10px;
+padding-right: 10px;
+
 
 }
 }
